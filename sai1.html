@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* FOOTER MAIN WRAPPER */
+.footer-section {
+    width: 100%;
+    background: #f7f7f7;
+    padding: 60px 0;
+    border-radius: 40px 40px 0 0;
+    margin-top: 120px;
+}
+
+/* FOOTER BOX (3 columns) */
+.footer-box {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    padding: 40px;
+}
+
+/* EACH COLUMN */
+.footer-column {
+    flex: 1;
+}
+
+.footer-column h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 16px;
+    color: #000;
+}
+
+.footer-column p {
+    color: #333;
+    line-height: 1.6;
+    font-size: 15px;
+}
+
+.copy {
+    margin-top: 25px;
+    font-size: 14px;
+    color: #777;
+}
+
+/* SOCIAL ICON */
+.footer-social img {
+    width: 26px;
+    height: 26px;
+    filter: grayscale(100%);
+    transition: 0.3s;
+}
+
+.footer-social img:hover {
+    filter: grayscale(0%);
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 768px) {
+
+    .footer-box {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px 20px;
+    }
+
+    .footer-column {
+        margin-bottom: 30px;
+    }
+
+    .footer-social img {
+        width: 32px;
+        height: 32px;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <footer class="footer-section">
+
+  <div class="footer-box">
+
+    <!-- 1 - Find Us -->
+    <div class="footer-column">
+      <h3>Find us</h3>
+      <p>Borgartún 27<br>
+      Reykjavík Iceland</p>
+      <p class="copy">©2023 Deed Delivery</p>
+    </div>
+
+    <!-- 2 - Contact Us -->
+    <div class="footer-column">
+      <h3>Contact us</h3>
+      <p>info@deeddelivery.com<br>
+      +3547806699</p>
+    </div>
+
+    <!-- 3 - Follow Us -->
+    <div class="footer-column">
+      <h3>Follow us</h3>
+      <div class="footer-social">
+        <a href="#">
+          <img src="linkedin.png" alt="LinkedIn">
+        </a>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+
+</body>
+</html>
